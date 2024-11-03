@@ -1,0 +1,22 @@
+diff --git a/package.json b/package.json
+index 98dc7a9e28f11df0ab4533c54252a21cd8617354..d618e5fc4cebc85aee95b1daacc23265cbf3f5b1 100644
+--- a/package.json
++++ b/package.json
+@@ -71,7 +71,6 @@
+       "types": "./dist/lenis.d.ts",
+       "default": "./dist/lenis.mjs"
+     },
+-    "./dist/*": "./dist/*",
+     "./react": {
+       "types": "./dist/lenis-react.d.ts",
+       "default": "./dist/lenis-react.mjs"
+@@ -83,7 +82,8 @@
+     "./vue": {
+       "types": "./dist/lenis-vue.d.ts",
+       "default": "./dist/lenis-vue.mjs"
+-    }
++    },
++    "./dist/*": "./dist/*"
+   },
+   "pnpm": {
+     "overrides": {
