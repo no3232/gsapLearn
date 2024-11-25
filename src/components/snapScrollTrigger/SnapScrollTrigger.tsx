@@ -14,7 +14,7 @@ const SnapScrollTrigger = () => {
       xPercent: -100 * (panels.length - 1),
       ease: 'none',
       scrollTrigger: {
-        trigger: `.${styles.container}`,
+        trigger: `.${styles.wrapper}`,
         pin: true,
         scrub: 1,
         snap: {
@@ -29,28 +29,30 @@ const SnapScrollTrigger = () => {
   });
 
   return (
-    <div className={styles.container}>
-      <div className={clsx(styles.pannel, styles.blue)}>
-        <div>
-          <h1>Horizontal snapping sections (simple)</h1>
-          <p>
-            Scroll vertically to scrub the horizontal animation. It also
-            dynamically snaps to the sections in an organic way based on the
-            velocity. The snapping occurs based on the natural ending position
-            after momentum is applied, not a simplistic "wherever it is when the
-            user stops".
-          </p>
-          <div className='scroll-down'>
-            Scroll down<div className='arrow'></div>
+    <div className={styles.wrapper}>
+      <div className={styles.container}>
+        <div className={clsx(styles.pannel, styles.blue)}>
+          <div>
+            <h1>Horizontal snapping sections (simple)</h1>
+            <p>
+              Scroll vertically to scrub the horizontal animation. It also
+              dynamically snaps to the sections in an organic way based on the
+              velocity. The snapping occurs based on the natural ending position
+              after momentum is applied, not a simplistic "wherever it is when
+              the user stops".
+            </p>
+            <div className='scroll-down'>
+              Scroll down<div className='arrow'></div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <section className={clsx(styles.pannel, styles.red)}>ONE</section>
-      <section className={clsx(styles.pannel, styles.orange)}>TWO</section>
-      <section className={clsx(styles.pannel, styles.purple)}>THREE</section>
-      <section className={clsx(styles.pannel, styles.green)}>FOUR</section>
-      <section className={clsx(styles.pannel, styles.gray)}>FIVE</section>
+        <section className={clsx(styles.pannel, styles.red)}>ONE</section>
+        <section className={clsx(styles.pannel, styles.orange)}>TWO</section>
+        <section className={clsx(styles.pannel, styles.purple)}>THREE</section>
+        <section className={clsx(styles.pannel, styles.green)}>FOUR</section>
+        <section className={clsx(styles.pannel, styles.gray)}>FIVE</section>
+      </div>
     </div>
   );
 };

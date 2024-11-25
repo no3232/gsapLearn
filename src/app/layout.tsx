@@ -1,7 +1,8 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-import ReactLenis from 'lenis/react';
+
 import '@/styles/reset.scss';
+import ReactLenis from 'lenis/react';
 
 gsap.registerPlugin(ScrollTrigger);
 
