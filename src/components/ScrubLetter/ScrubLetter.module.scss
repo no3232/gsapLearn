@@ -1,0 +1,16 @@
+.textDiv {
+  word-break: keep-all;
+  font-size: 30px;
+  white-space: pre-wrap;
+
+  margin: 50vh 0;
+  b {
+    // color: $color-white;
+    background-color: blue;
+  }
+  span {
+    color: gray;
+    opacity: 1;
+    line-height: 1.5;
+  }
+}
