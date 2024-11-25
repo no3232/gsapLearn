@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+
+  height: 100vh;
+  width: 600%;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+.pannel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+
+  text-align: center;
+
+  color: white;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.green {
+  background-color: green;
+}
+
+.gray {
+  background-color: gray;
+}
